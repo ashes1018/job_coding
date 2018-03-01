@@ -1,5 +1,7 @@
 package com.leetcode;
 
+
+//数组出现重复的值，和第一版本的相似，但是在判断的时候，注意边界，这里是将边界往另一个方向加一
 public class search_in_rotated_array2 {
 	public int findIndex(int[]nums, int target){
 		int n = nums.length;
