@@ -1,6 +1,9 @@
 package com.leetcode;
 
 public class search_for_a_range {
+	
+//	看见这种题，要能反应过来是用的二分查找。
+//	这里用了三次二分查找，第一次查找是否存在目标值；第二次在第一次查找到的基础上，使用二分查找确定右边界；第三次使用二分查找确定左边界。注意数组为空时的判定。
 	public int[] search_range(int[] nums, int target) {
 		int low = 0;
 		int high = nums.length - 1;
