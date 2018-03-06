@@ -18,7 +18,7 @@ public class maximum_subarray {
 	        return max;
 	    }
 	  
-//	 分治解法，以mid为分界点，
+//	 分治解法，以mid为分界点，左右查找最大子串，再和中间值比较。
 	  	public int helper(int[] nums, int left, int right){
 	  		if(nums == null || nums.length == 0){
 	  			return 0;
