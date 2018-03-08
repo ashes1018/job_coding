@@ -2,6 +2,7 @@ package com.leetcode;
 
 public class unique_paths {
 	
+//	动态规划，每个点处的走法都是由向下和向右两步组成的，这里需要注意一点的是， 在各个临界点，也就是dp[0][1]、dp[0][2]、dp[0][3]等位置作为临界点，是需要先对其赋值的。
 	public int uniquePaths(int m, int n) {
 		if(m == 0 || n ==0){
 			return 0;
