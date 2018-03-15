@@ -6,7 +6,9 @@ import java.util.Stack;
 public class maximal_rectangle {
 
 	
-//	这道题的思想很巧妙，借助网上的方法，
+//	这道题的思想很巧妙，借助网上的方法，在遍历每一行的时候，对每一行的数字，计算该数字对应的列直方图高度，若遇到数字为0，则置0；否则就加1；对每一行得到的直方图，
+//	使用之前计算最大直方图面积的方法。
+	
 	public int maximalRectangle(char[][] matrix) {
 		if(matrix == null || matrix.length ==0 || matrix[0].length == 0){
 			return 0;
@@ -19,8 +21,7 @@ public class maximal_rectangle {
 				nums[j] = 0;
 			}else {
 				nums[j] = 1 + nums[j];
-			} 
-			
+			} 			
 		}
 			maxArea = Math.max(maxArea, largest_rectangle_in_histogram(nums));
     }
