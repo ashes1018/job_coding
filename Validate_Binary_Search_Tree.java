@@ -18,7 +18,7 @@ public class Validate_Binary_Search_Tree {
         if(root.left == null && root.right == null) return true;
         
         helper(root ,list);
-//        System.out.println(list);
+ 
         for (int i = 1; i < list.size(); i++) {
 			if(list.get(i) <= list.get(i-1)){
 				return false;
@@ -28,14 +28,12 @@ public class Validate_Binary_Search_Tree {
     }
 	
 	public void helper(TreeNode root, List<Integer> list) {
-	 
 		if(root == null){
 			return;
 		}
 		helper(root.left, list);
 		list.add(root.val);
 		helper(root.right, list );
-//		return list;
 	}
 	public static void main(String[] args) {
 		TreeNode root=  new TreeNode(3);
