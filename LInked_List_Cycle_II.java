@@ -1,6 +1,6 @@
 package com.leetcode;
 
-public class LInked_List_Cycle_II {
+public class Linked_List_Cycle_II {
 	
 	static class ListNode {
 		 int val;
@@ -41,7 +41,7 @@ public class LInked_List_Cycle_II {
 		node.next = new ListNode(2);
 		node.next.next = new ListNode(3);
 		node.next.next.next = node.next;
-		System.out.println(new LInked_List_Cycle_II().detectCycle(node).val);
+		System.out.println(new Linked_List_Cycle_II().detectCycle(node).val);
 		 
 	}
 
