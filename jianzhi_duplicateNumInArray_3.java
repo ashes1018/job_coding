@@ -34,8 +34,9 @@ public class jianzhi_duplicateNumInArray_3 {
 		}
 		return set;
 	}
+	
+	
 //	这里就是一个O(1)空间的方法，遍历数组，如果i位置的元素不等于i，那么就进行变换;
- 
 	public Set<Integer> find_duplicate3(int[] nums) {
 		Set<Integer> set = new HashSet<>();
 		if(nums == null || nums.length == 0){
