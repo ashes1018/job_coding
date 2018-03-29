@@ -2,6 +2,10 @@ package com.leetcode;
 
 public class jianzhi_duplicateNumInArray_33 {
 
+
+//	二分搜索思路，寻找数组中出现次数超过2的元素。对每一部分，例如小于4的部分，包含[1,2,3,4]的元素，遍历数组，如果这四个元素有出现次数超过一次的，
+//	那么在[0,4]这个范围内存在重复元素，则缩小搜索范围；否则在另一半搜索。
+	
 	public int getDuplicateNumInArray(int []nums) {
 		if(nums == null || nums.length <= 0 ){
 			return -1;
