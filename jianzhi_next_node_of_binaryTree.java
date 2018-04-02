@@ -44,10 +44,10 @@ public class jianzhi_next_node_of_binaryTree {
 		node.left.right = new TreeNode(5);
 		node.left.right.left = new TreeNode(8);
 		node.left.right.right = new TreeNode(9);
-		node.left.right.left.left = null;
-		node.left.right.left.right = null;
-		node.left.right.right.left = null;
-		node.left.right.right.right = null;
+//		node.left.right.left.left = null;
+//		node.left.right.left.right = null;
+//		node.left.right.right.left = null;
+//		node.left.right.right.right = null;
 		node.right = new TreeNode(3);
 		node.right.left = new TreeNode(6);
 		node.right.right = new TreeNode(7);
