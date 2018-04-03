@@ -2,6 +2,10 @@ package com.leetcode;
 
 public class Maximal_Square {
 
+	
+	
+//	使用动规解决，维护一个动规数组，表示在每一个顶点处正方形的边长；在每一个顶点处，判断这个顶点是否是1，若为1，则当前位置的dp[i][j]是由
+//	dp[i-1][j],dp[i][j-1],dp[i-1][j-1]三者中的较小值加上1组成。
 	public int maximalSquare(char[][] matrix) {
         if(matrix == null || matrix.length == 0 || matrix[0].length == 0){
         	return 0;
