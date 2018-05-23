@@ -44,5 +44,4 @@ public class jianzhi_quickSort_10 {
 			System.out.println(i);
 		}
 	}
-
 }
