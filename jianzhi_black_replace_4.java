@@ -33,10 +33,24 @@ public class jianzhi_black_replace_4 {
 		return str;
 	}
 	
+	public String replaceSpace(StringBuffer str) {
+		char[] string = str.toString().toCharArray();
+		StringBuffer sb = new StringBuffer();
+		for(char i: string){
+			if(i == ' '){
+				sb.append("%20");
+			}else {
+				sb.append(i);
+			}
+		}
+		return sb.toString();			
+	}
+	
 	public static void main(String[] args) {
 		 String string = "we are happy";
-		 System.out.println(new jianzhi_black_replace_4().replaceBlank(string));
-		 
+		 StringBuffer str = new StringBuffer("we are happy");		 
+//		 System.out.println(new jianzhi_black_replace_4().replaceBlank(string));
+		 System.out.println(new jianzhi_black_replace_4().replaceSpace(str));
 	}
 
 }

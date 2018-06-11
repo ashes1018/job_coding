@@ -2,6 +2,9 @@ package com.leetcode;
 
 public class jianzhi_11_minNumberInRotateArray {
 	
+	
+//	使用二分查找的思想，可以将复杂度降到O(logn)。这里要注意{1,1,1,0,1}还有{1,0,1,1,1}这样的情况，首尾和中间值都相等的情况下，二分判断的方法不适用了，只能从头到尾遍历求
+//	最小值。
 	public int min(int[] nums) {
 		int index1 = 0 ;
 		int index2 = nums.length - 1;

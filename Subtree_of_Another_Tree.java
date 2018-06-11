@@ -17,7 +17,9 @@ public class Subtree_of_Another_Tree {
 //	这种解法的思路是利用二叉树的前序遍历，将树表示为字符串的形式，问题转化成字符串子串问题。而根据题目要求，在每个节点前加上一个标志位“#”可以更好解决问题。
 	public boolean isSubtree(TreeNode s, TreeNode t) {
 		String tree1 = preorder(s, true);
+		System.out.println(tree1);
 		String tree2 = preorder(t, true);
+		System.out.println(tree2);
 		return tree1.indexOf(tree2) >= 0;
 		
 	}
